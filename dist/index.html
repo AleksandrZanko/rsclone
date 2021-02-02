@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MARS 3030</title>
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+<link href="style.css" rel="stylesheet"></head>
+<body>
+	<div class="menu">
+		<picture>
+			<source media="(max-width: 600px)" srcset="img/logo-mobile.png">
+			<img class="game-logo" src="img/img/logo.png" alt="mars 3030">
+		</picture>
+		<ul class="menu-list">
+			<li class="menu-item new-game">Новая игра</li>
+			<li class="menu-item control-btn">Управление</li>
+			<li class="menu-item settings-btn">Настройки</li>
+			<li class="menu-item hall-of-frame-btn">Зал славы</li>
+		</ul>
+		<footer class="footer"><a class="footer-link" href="https://github.com/rolling-scopes-school/aleksandrzanko-JS2020Q3">Aleksandr Zanko</a>
+			<div class="footer-logo">
+				<img src="img/img/rs_school_js.svg" width="100" height="50" alt="Rs School logo">
+				<a class="footer-link" href="https://rs.school/js/">ссылка на курс</a>
+			</div>
+		</footer>
+	</div>
+	<div class="intro">
+		<h2>Добро пожаловать в игру!</h1>
+		<h3>Cейчас тебе нужно выбрать персонажа</h3>
+		<ul class="players-list">
+			<li class="players-item singer"></li>
+			<li class="players-item grandmom"></li>
+			<li class="players-item girl"></li>
+			<li class="players-item worker"></li>
+		</ul>
+			<button class="back-to-menu-button">Меню</button>
+	</div>
+	<div class="control">
+		<h2>Управление</h2>
+		<h3>На компьютере:</h3>
+		<ul class="control-list">
+			<li class="control-item">Передживежние игрока <b>вверх</b> - стрелка <b>↑</b>.</li>
+			<li class="control-item">Передживежние игрока <b>вниз</b> - стрелка <b>↓</b>.</li>
+			<li class="control-item">Передживежние игрока <b>вправо</b> - стрелка <b>→</b>.</li>
+			<li class="control-item">Передживежние игрока <b>влево</b> - стрелка <b>←</b>.</li>
+			<li class="control-item"><b>Выстрел</b> - клавиша <b>"Пробел"</b>.</li>
+		</ul>
+		<h3>На мобильных устройствах:</h3>
+		<ul class="control-list">
+			<li class="control-item"> Игрок <b>вверх</b> - нажать ровно над игроком.</li>
+			<li class="control-item">Игрок <b>вниз</b> - нажать ровно под игроком.</li>
+			<li class="control-item"><b>Выстрел</b> - нажать на часть экрана откуда выдвигается противник.</li>
+		</ul>
+		<button class="back-to-menu-button">Меню</button>
+	</div>
+	<div class="settings">
+		<h2>Настройки</h2>
+		<div class="volume-wrapper">
+			<label for="volume">
+				Громкость:
+			</label>
+			<input id="volume" type="range" min="0" max="1" step="0.1" value="0.5">
+		</div>
+		<div class="сomplexity-wrapper">
+			<label for="сomplexity">
+				Сложность:
+			</label>
+			<input id="сomplexity" type="range" min="10" max="20" step="5" value="0.5">
+		</div>
+		<button class="back-to-menu-button">Меню</button>
+	</div>
+	<div class="hall-of-frame">
+		<h2>Зал победителей Топ-10</h2>
+		<button class="back-to-menu-button">Меню</button>
+	</div>
+	<div class="game-field">
+		<div id="lifes">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div id="player"></div>
+	</div>
+	
+	<div class="popup">
+		<label for="name">Имя игрока</label>
+		<input type="text" class="name" id="name">
+		<button class="popup-button">Отправить</button>
+	</div>
+	<div class="overlay"></div>
+
+<script type="text/javascript" src="index.js"></script></body>
+</html>
